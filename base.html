@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo de Sudaderas - Tienda de sudaderas con memes</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Tienda de sudaderas con memes, diseño accesible">
+</head>
+<body>
+    <a href="#main-content" class="skip-link" tabindex="0">Saltar al contenido principal</a>
+    
+    <header>
+        <nav aria-label="Menú principal">
+            <ul class="menu">
+                <li><a href="#" tabindex="0">Inicio</a></li>
+                <li><a href="/Productos" tabindex="0">Productos</a></li>
+                <li><a href="/Nosotros" tabindex="0">Nosotros</a></li>
+                <li><a href="/Contacto" tabindex="0">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <h1 tabindex="0">Las mejores meme sudaderas</h1>
+            <div></div>
+            <h3 tabindex="0">Los diseños más divertidos para amantes de los memes que quieran abrigarse</h3>
+        </section>
+
+        <section id="productos" class="carrusel-section">
+    <h2 tabindex="0" class="centered-title">Nuestros productos</h2>
+    <div class="carrusel-container">
+        <div class="carrusel">
+            <div class="carrusel-inner">
+                <!-- Producto 1 -->
+                <div class="slide" tabindex="0">
+                    <a href="/producto1" class="product-link">
+                        <img src="https://meowgicians.com/cdn/shop/files/funny-huh-cat-meme-unisex-hoodie-for-cat-lovers-927459.webp?v=1711697481" 
+                             alt="Sudadera amarilla con meme de gato 'Huh?' - Modelo unisex en algodón">
+                    </a>
+                </div>
+                
+                <!-- Producto 2 -->
+                <div class="slide" tabindex="-1">
+                    <a href="/producto2" class="product-link">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_753815-MLM53904059458_022023-O.webp" 
+                             alt="Sudadera blanca con mangas grises y meme Cheems ansiedad - Modelo oversize">
+                    </a>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="slide" tabindex="-1">
+                    <a href="/producto3" class="product-link">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_622193-MLM48171168421_112021-O.webp" 
+                             alt="Sudadera blanca clásica con meme Cheems - Edición limitada">
+                    </a>
+                </div>
+            </div>
+            <button class="carrusel-btn prev" tabindex="0">
+                &#10094;
+            </button>
+            <button class="carrusel-btn next" tabindex="0">
+                &#10095;
+            </button>
+        </div>
+    </div>
+</section>
+
+        <section id="nosotros" class="newsletter">
+            <div class="newsletter-content">
+                <h2 tabindex="0">Suscríbete para ofertas</h2>
+                <h3 tabindex="0">
+                    ¡Recibe <strong class="highlight">10% de descuento</strong> en tu primera compra y memes frescos en tu email!
+                </h3>
+                
+                <form id="newsletter-form" class="newsletter-form">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required
+                            aria-required="true" 
+                            aria-describedby="email-error"
+                            placeholder="tucorreo@ejemplo.com"
+                            tabindex="0"
+                        >
+                        <span id="email-error" role="alert" aria-live="assertive"></span>
+                    </div>
+                    <button type="submit" class="btn-submit" tabindex="0">¡Quiero ofertas!</button>
+                </form>
+                
+                <p class="newsletter-note" tabindex="0">
+                    Prometemos no llenar tu bandeja de entrada. Solo memes y descuentos relevantes.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <div class="footer-content">
+            <p tabindex="0">&copy; 2023 Meme Hoodies</p>
+            <ul class="footer-links">
+                <li><a href="/privacidad" tabindex="0">Política de privacidad</a></li>
+                <li><a href="/terminos" tabindex="0">Términos de servicio</a></li>
+                <li><a href="/contacto" tabindex="0">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
