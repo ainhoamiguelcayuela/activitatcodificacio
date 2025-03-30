@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.hero {
+    background: url('https://source.unsplash.com/800x400/?jewelry,necklace') no-repeat center center/cover;
+    padding: 100px 20px;
+    color: white;
+}
+
+.hero h1, .hero p {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: #e91e63;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: background 0.3s, border 0.3s;
+}
+
+.cta-button:hover, .cta-button:focus {
+    background: #c2185b;
+    border: 2px solid white;
+    outline: 3px solid #ff80ab;
+}
+
+.features, .testimonials {
+    margin: 40px 0;
+    text-align: left;
+}
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features li::before {
+    content: '✔';
+    color: #e91e63;
+    margin-right: 8px;
+}
+
+blockquote {
+    font-style: italic;
+    color: #555;
+    padding: 10px;
+    border-left: 4px solid #e91e63;
+    background: #fff;
+    display: inline-block;
+    max-width: 90%;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Accesibilidad - Enfoque para elementos interactivos */
+button:focus, a:focus {
+    outline: 3px solid #ff80ab;
+    background-color: #c2185b;
+}
